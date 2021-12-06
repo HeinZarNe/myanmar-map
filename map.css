@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'Readex Pro', 'Readex Pro', sans-serif;
+    ;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    background: #47A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 6% auto;
+}
+
+.info {
+    width: 63%;
+    line-height: 34px;
+    font-size: 18rem;
+}
+
+.info-title {
+    font-size: 38rem;
+    margin-bottom: 29px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.info-details {
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.current-location {
+    margin-top: 29px;
+    font-size: 21rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.current-location span {
+    background-color: hsl(210, 44%, 32%);
+    padding: 12px;
+    color: #fff;
+}
+
+.map svg {
+    stroke: #fff;
+    stroke-opacity: 0.5;
+}
+
+.map path {
+    transition: 0.4s;
+}
+
+.map path:hover {
+    fill: #aa3535;
+}
+
+@media screen and (max-width:850px) {
+    html {
+        font-size: 0.6px;
+    }
+    .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        margin: 6% auto;
+    }
+    .info {
+        width: 100%;
+        line-height: 17px;
+    }
+    .map {
+        margin-top: 30px;
+    }
+    .current-location {
+        font-size: 17rem;
+    }
+}
